@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Home Workout</string>
+    <string name="message1">Push Limits,\n Achieve Goals</string>
+    <string name="qulity">Challenge yourself with\nour dynamic workouts\nand see the results\n you\'ve always wanted.</string>
 </resources>
