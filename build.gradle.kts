@@ -1,7 +1,7 @@
 
 buildscript {
     dependencies {
-        classpath ("com.google.dagger:hilt-android-gradle-plugin:2.40.1")
+        classpath ("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
         classpath ("com.google.gms:google-services:4.3.13")
 
         val nav_version = "2.5.0"
