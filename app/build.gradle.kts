@@ -6,6 +6,7 @@ plugins {
     id ("dagger.hilt.android.plugin")
     id("kotlin-kapt")
     id("com.google.gms.google-services")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -71,12 +72,12 @@ dependencies {
     implementation ("com.shuhart.stepview:stepview:1.5.1")
 
     //Android Ktx
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.4.2")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
 
     //Dagger hilt
-    implementation ("com.google.dagger:hilt-android:2.38.1")
+    implementation ("com.google.dagger:hilt-android:2.48")
 
-    kapt ("com.google.dagger:hilt-compiler:2.38.1")
+    kapt ("com.google.dagger:hilt-compiler:2.48")
 
 
     //FireBase
