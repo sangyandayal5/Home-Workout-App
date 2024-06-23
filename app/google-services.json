@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "406734423644",
-    "project_id": "home-workout-2677b",
-    "storage_bucket": "home-workout-2677b.appspot.com"
+    "project_number": "1069299708350",
+    "project_id": "homeworkout-5bdb6",
+    "storage_bucket": "homeworkout-5bdb6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:406734423644:android:39bc2a68bd09fb20244899",
+        "mobilesdk_app_id": "1:1069299708350:android:d1904e08b7199f1f0f09ef",
         "android_client_info": {
           "package_name": "com.example.homeworkout"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCmfUB-vEtGSulVrxQMyBkNTmoHITnpV8c"
+          "current_key": "AIzaSyC6P3f4cp9bq9ucRR2JxnIYJboBWQeAz3Q"
         }
       ],
       "services": {
