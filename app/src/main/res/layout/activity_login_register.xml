@@ -52,7 +52,7 @@
                 />
 
             <TextView
-                android:id="@+id/tvDoYouHaveAccount"
+                android:id="@+id/rgSighIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/h2"
@@ -70,7 +70,7 @@
                 android:layout_height="@dimen/edittextHeight"
                 app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
                 app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
-                app:layout_constraintTop_toBottomOf="@id/tvDoYouHaveAccount"
+                app:layout_constraintTop_toBottomOf="@id/rgSighIn"
                 style="@style/editText"
                 android:hint="First Name"
                 android:layout_marginTop="50dp"/>
