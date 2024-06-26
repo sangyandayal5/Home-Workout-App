@@ -3,6 +3,7 @@ package com.example.homeworkout.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Toast
 import com.example.homeworkout.R
 import com.example.homeworkout.databinding.ActivityLoginRegisterBinding
@@ -27,15 +28,26 @@ class LoginRegisterActivity : AppCompatActivity() {
             val password = binding.rgPassword.text.toString()
 
             if(email.isNotEmpty() && password.isNotEmpty()){
-                firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
-                    if(it.isSuccessful){
-                        val intent = Intent(this,SignInActivity::class.java)
-                        startActivity(intent)
+                if(email.isValidEmail()){
+                    if(password.length >=6){
+                        firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
+                            if(it.isSuccessful){
+                                val intent = Intent(this,SignInActivity::class.java)
+                                startActivity(intent)
+                            }
+                            else{
+                                Toast.makeText(this,it.exception.toString(),Toast.LENGTH_LONG).show()
+                            }
+                        }
                     }
                     else{
-                        Toast.makeText(this,it.exception.toString(),Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"Length of Password Should me greater than 5",Toast.LENGTH_LONG).show()
                     }
                 }
+                else{
+                    Toast.makeText(this,"Invalid Email",Toast.LENGTH_LONG).show()
+                }
+
             }
             else{
                 Toast.makeText(this,"Empty Fields are not allowed",Toast.LENGTH_LONG).show()
@@ -43,3 +55,5 @@ class LoginRegisterActivity : AppCompatActivity() {
         }
     }
 }
+
+fun CharSequence?.isValidEmail() = !isNullOrEmpty() && Patterns.EMAIL_ADDRESS.matcher(this).matches()
