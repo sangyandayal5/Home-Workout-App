@@ -15,13 +15,13 @@
         android:theme="@style/Theme.HomeWorkout"
         tools:targetApi="30">
         <activity
-            android:name=".activities.SignInActivity"
+            android:name=".activities.LoginRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".activities.WorkoutActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginRegisterActivity"
+            android:name=".activities.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

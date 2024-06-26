@@ -21,6 +21,11 @@ class LoginRegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
+        binding.rgSighIn.setOnClickListener {
+            val  intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btnRegister.setOnClickListener{
             val firstName = binding.rgFName.text.toString()
             val lastName = binding.rgLName.text.toString()
