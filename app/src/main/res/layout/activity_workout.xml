@@ -7,35 +7,115 @@
     tools:context=".activities.WorkoutActivity">
 
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/blury_background"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/blury_background" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvAppName"
+                android:id="@+id/tvWelcomeUser"
+                style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/h3"
                 android:layout_marginTop="110dp"
 
                 android:drawablePadding="6dp"
+                android:text="Hey, User"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="Main Page.(Temporary text)"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
 
+            <TextView
+                android:id="@+id/tvWelcomeQuote"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="5dp"
+                android:text="The pain you feel today\n   will be the strength\n    you feel tomorrow."
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.431"
+                app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcomeUser"
+                app:layout_constraintVertical_bias="0.121" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonQuickWorkout"
+                style="@style/blueButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mediumButtonHeight"
+
+                android:text="Quick Workout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line2"
+                app:layout_constraintStart_toStartOf="@+id/line1"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcomeQuote"
+                app:layout_constraintVertical_bias="0.165"
+                app:spinning_bar_color="@color/white" />
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonCreateWorkout"
+                style="@style/blueButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mediumButtonHeight"
+
+                android:text="Exercises &amp; Workouts"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/line1"
+                app:layout_constraintTop_toBottomOf="@+id/buttonQuickWorkout"
+                app:layout_constraintVertical_bias="0.168"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonHistory"
+                style="@style/blueButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mediumButtonHeight"
+
+                android:text="My History"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+                app:layout_constraintTop_toBottomOf="@+id/buttonQuickWorkout"
+                app:layout_constraintVertical_bias="0.459"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonProfile"
+                style="@style/blueButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mediumButtonHeight"
+
+                android:layout_marginTop="174dp"
+                android:layout_marginBottom="200dp"
+                android:text="My Profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/line4"
+                app:layout_constraintTop_toBottomOf="@+id/buttonQuickWorkout"
+                app:spinning_bar_color="@color/white" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineLoginLeft"
@@ -43,6 +123,34 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.09" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.21" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.84" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.39" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.61" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineLoginRight"
