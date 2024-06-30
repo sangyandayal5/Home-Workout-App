@@ -27,7 +27,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvWelcomeUser"
+                android:id="@+id/awUName"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.431"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
-                app:layout_constraintTop_toBottomOf="@+id/tvWelcomeUser"
+                app:layout_constraintTop_toBottomOf="@+id/awUName"
                 app:layout_constraintVertical_bias="0.121" />
 
             <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
