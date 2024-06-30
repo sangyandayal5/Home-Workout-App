@@ -16,5 +16,7 @@ class WorkoutActivity : AppCompatActivity() {
         binding  = ActivityWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
     }
 }

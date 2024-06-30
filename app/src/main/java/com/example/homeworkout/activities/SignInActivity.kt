@@ -14,7 +14,6 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var  firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding  = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
