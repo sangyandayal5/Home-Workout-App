@@ -32,7 +32,11 @@ class SignInActivity : AppCompatActivity() {
                     if(password.length >=6){
                         firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener{
                             if(it.isSuccessful){
+                                var UID = firebaseAuth.uid.toString()
                                 val intent = Intent(this,WorkoutActivity::class.java)
+                                val bundle = Bundle()
+                                bundle.putString("UID",UID)
+                                intent.putExtras(bundle)
                                 startActivity(intent)
                             }
                             else{
