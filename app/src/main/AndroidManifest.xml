@@ -21,6 +21,19 @@
             android:name=".activities.WorkoutActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.QuickWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExercisesWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyProfileActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.SignInActivity"
             android:exported="true">
             <intent-filter>
