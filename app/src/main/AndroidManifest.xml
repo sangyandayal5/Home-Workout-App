@@ -15,6 +15,12 @@
         android:theme="@style/Theme.HomeWorkout"
         tools:targetApi="30">
         <activity
+            android:name=".activities.ExerciseScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.StartExerciseWithInput"
+            android:exported="false" />
+        <activity
             android:name=".activities.LoginRegisterActivity"
             android:exported="false" />
         <activity
@@ -32,7 +38,6 @@
         <activity
             android:name=".activities.MyProfileActivity"
             android:exported="false" />
-
         <activity
             android:name=".activities.SignInActivity"
             android:exported="true">

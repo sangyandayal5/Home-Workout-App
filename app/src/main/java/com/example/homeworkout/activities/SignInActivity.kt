@@ -1,5 +1,6 @@
 package com.example.homeworkout.activities
 
+import android.app.PendingIntent.OnFinished
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,6 +39,7 @@ class SignInActivity : AppCompatActivity() {
                                 bundle.putString("UID",UID)
                                 intent.putExtras(bundle)
                                 startActivity(intent)
+                                finish()
                             }
                             else{
                                 Toast.makeText(this,it.exception.toString(), Toast.LENGTH_LONG).show()
