@@ -7,7 +7,7 @@
     tools:context=".activities.ExerciseScreen">
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/exeBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -22,38 +22,56 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/exeRemTime"
+        style="@style/h3"
         android:layout_width="50dp"
         android:layout_height="30dp"
-        android:text="60"
         android:gravity="center"
-        android:textSize="24sp"
-        style="@style/h3"
-        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
-        app:layout_constraintEnd_toEndOf="@+id/progressBar"
-        app:layout_constraintStart_toStartOf="@+id/progressBar"
-        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        android:text="60"
         android:textColor="#00ffff"
-        />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/exeBar"
+        app:layout_constraintEnd_toEndOf="@+id/exeBar"
+        app:layout_constraintStart_toStartOf="@+id/exeBar"
+        app:layout_constraintTop_toTopOf="@+id/exeBar" />
 
     <ImageView
         android:id="@+id/image1"
         android:layout_width="200dp"
         android:layout_height="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/exeBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/abs_main" />
 
     <ImageView
         android:id="@+id/image2"
         android:layout_width="200dp"
         android:layout_height="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/exeBar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/image1"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/back_main" />
+
+    <TextView
+        android:id="@+id/exeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        style="@style/h3"
+        android:textStyle="bold"
+        android:text="Exercise Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
