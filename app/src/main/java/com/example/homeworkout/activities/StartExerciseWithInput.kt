@@ -17,6 +17,7 @@ class StartExerciseWithInput : AppCompatActivity() {
         setContentView(binding.root)
         val bundle = intent.extras
         val imgSrc = bundle!!.getInt("ImgSrc")
+        val exeName = bundle!!.getString("ExeName")
         binding.startBTN.setOnClickListener {
             val numberOfSets = binding.startNOS.text.toString()
             val nos = numberOfSets.toInt()
@@ -28,8 +29,10 @@ class StartExerciseWithInput : AppCompatActivity() {
                 bundle1.putInt("imgSrc",imgSrc)
                 bundle1.putInt("nos",nos)
                 bundle1.putInt("tps",tps)
+                bundle1.putString("exeName",exeName)
                 intent.putExtras(bundle1)
                 startActivity(intent)
+                finish()
             }
         }
     }
