@@ -65,7 +65,6 @@ class WorkoutActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
     }
 
     private fun cname(userName: String) {

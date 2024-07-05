@@ -60,6 +60,9 @@
             android:name=".activities.ExerciseLegsActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.SignInActivity"
             android:exported="true">
             <intent-filter>

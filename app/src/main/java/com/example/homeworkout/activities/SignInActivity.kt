@@ -4,8 +4,10 @@ import android.app.PendingIntent.OnFinished
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.Toast
 import com.example.homeworkout.R
+import com.example.homeworkout.databinding.ActivityCutomToastBinding
 import com.example.homeworkout.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -21,6 +23,11 @@ class SignInActivity : AppCompatActivity() {
 
         binding.tvDontHaveAccount.setOnClickListener{
             val intent  = Intent(this, LoginRegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvForgotPasswordLogin.setOnClickListener{
+            val intent  = Intent(this, ForgetPasswordActivity::class.java)
             startActivity(intent)
         }
 
@@ -47,7 +54,8 @@ class SignInActivity : AppCompatActivity() {
                         }
                     }
                     else{
-                        Toast.makeText(this,"Length of Password Should me greater than 5", Toast.LENGTH_LONG).show()
+                        showCustomToast("The password is too short")
+//                        Toast.makeText(this,"Length of Password Should me greater than 5", Toast.LENGTH_LONG).show()
                     }
                 }
                 else{
@@ -60,4 +68,21 @@ class SignInActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun showCustomToast(message: String) {
+        // Inflate custom toast layout
+        val layoutInflater = LayoutInflater.from(this)
+        val customToastBinding = ActivityCutomToastBinding.inflate(layoutInflater)
+
+        // Set the message for the custom toast
+        customToastBinding.tvMessage.text = message
+
+        // Create the toast
+        with(Toast(this)) {
+            duration = Toast.LENGTH_SHORT
+            view = customToastBinding.root
+            show()
+        }
+    }
+
 }
