@@ -24,6 +24,7 @@ class FinishExerciseScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFinishExerciseScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        firebaseAuth = FirebaseAuth.getInstance()
         val db = Firebase.firestore
         val bundle = intent.extras
         val uid = firebaseAuth.uid
@@ -35,11 +36,11 @@ class FinishExerciseScreen : AppCompatActivity() {
             "nos" to nos,
             "date" to cDate
         )
-        val exeRef = uid?.let { db.collection("history").document(it) }
-        exeRef?.set(exercise)
+//        val exeRef = uid?.let { db.collection("history").document(it) }
+//        exeRef?.set(exercise)
         binding.endBTN.setOnClickListener {
-            val intent = Intent(this,ExercisesWorkoutActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this,ExercisesWorkoutActivity::class.java)
+//            startActivity(intent)
             finish()
         }
     }

@@ -19,8 +19,10 @@ class ExerciseScreen : AppCompatActivity() {
         var nos = bundle!!.getInt("nos")
         val tps = bundle!!.getInt("tps")
         val imgSrc = bundle!!.getInt("imgSrc")
+        val imgSrc1 = bundle!!.getInt("imgSrc1")
         val exeName = bundle!!.getString("exeName")
-        binding.image2.setImageResource(imgSrc)
+        binding.image1.setImageResource(imgSrc)
+        binding.image2.setImageResource(imgSrc1)
         binding.exeName.text = exeName
         binding.exeBar.max = tps
         binding.exeBar.progress = tps
@@ -39,6 +41,7 @@ class ExerciseScreen : AppCompatActivity() {
                 val intent = Intent(this@ExerciseScreen,StartAgainExercise::class.java)
                 var bundle1 = Bundle()
                 bundle1.putInt("imgSrc",imgSrc)
+                bundle1.putInt("imgSrc1",imgSrc1)
                 bundle1.putInt("nos",nos)
                 bundle1.putInt("tps",tps)
                 bundle1.putString("exeName",exeName)
@@ -47,6 +50,6 @@ class ExerciseScreen : AppCompatActivity() {
                 finish()
             }
 
-        }
+        }.start()
     }
 }
