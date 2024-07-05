@@ -45,6 +45,21 @@
             android:name=".activities.MyProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.ExerciseAbsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExerciseChestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExerciseBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExerciseHandsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExerciseLegsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.SignInActivity"
             android:exported="true">
             <intent-filter>

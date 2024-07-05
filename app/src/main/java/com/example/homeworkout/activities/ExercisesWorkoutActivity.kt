@@ -1,5 +1,6 @@
 package com.example.homeworkout.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.homeworkout.databinding.ActivityExercisesWorkoutBinding
@@ -14,6 +15,31 @@ class ExercisesWorkoutActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         binding  = ActivityExercisesWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.buttonChestWorkout.setOnClickListener{
+            val intent  = Intent(this, ExerciseChestActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonHandsWorkout.setOnClickListener{
+            val intent  = Intent(this, ExerciseHandsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonBackWorkout.setOnClickListener{
+            val intent  = Intent(this, ExerciseBackActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonLegsWorkout.setOnClickListener{
+            val intent  = Intent(this, ExerciseLegsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonAbsWorkout.setOnClickListener{
+            val intent  = Intent(this, ExerciseAbsActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

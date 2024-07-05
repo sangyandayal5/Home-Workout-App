@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="800dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ExerciseChestActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blury_background"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-4dp" />
+
+            <TextView
+                android:id="@+id/tvAppName"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                android:drawablePadding="6dp"
+                android:text="ABS WORKOUT"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/chest1Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginBottom="1140dp"
+                android:src="@drawable/abs_1_jumping_jacks_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft" />
+
+            <ImageView
+                android:id="@+id/chest2Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginBottom="284dp"
+                android:src="@drawable/abs_2_abdominal_crunches_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/chest1Picture"
+                app:layout_constraintVertical_bias="0.128" />
+
+
+            <ImageView
+                android:id="@+id/chest3Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="92dp"
+                android:src="@drawable/abs_3_plank_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/chest2Picture" />
+
+            <ImageView
+                android:id="@+id/chest4Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginBottom="268dp"
+                android:src="@drawable/abs_4_russian_twist_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft" />
+
+
+            <ImageView
+                android:id="@+id/chest5Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="1220dp"
+                android:src="@drawable/abs_5_heal_touch_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonAbs1Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="320dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonAbs2Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="604dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonAbs3Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="896dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chest3Picture"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonAbs4Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="1192dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.578"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonAbs5Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="1460dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+
+            <TextView
+                android:id="@+id/chestWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="164dp"
+                android:layout_marginEnd="36dp"
+                android:drawablePadding="6dp"
+                android:text="Jumping \nJacks"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.882"
+                app:layout_constraintStart_toEndOf="@+id/chest1Picture"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/handsWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="216dp"
+                android:layout_marginEnd="16dp"
+                android:drawablePadding="6dp"
+                android:text="Abdominal \n Crunches"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chestWorkoutText" />
+
+            <TextView
+                android:id="@+id/backWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="248dp"
+                android:drawablePadding="6dp"
+                android:text="Planks"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toEndOf="@+id/chest3Picture"
+                app:layout_constraintTop_toBottomOf="@+id/handsWorkoutText" />
+
+            <TextView
+                android:id="@+id/legsWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="540dp"
+                android:layout_marginEnd="4dp"
+                android:drawablePadding="6dp"
+                android:text="Russian Twist"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/handsWorkoutText" />
+
+            <TextView
+                android:id="@+id/absWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="816dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="6dp"
+                android:text="Heel Touch"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/handsWorkoutText" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineRegisterLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.09" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineRegisterRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="369dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

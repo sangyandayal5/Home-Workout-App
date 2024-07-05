@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="800dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ExerciseLegsActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blury_background"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-4dp" />
+
+            <TextView
+                android:id="@+id/tvAppName"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                android:drawablePadding="6dp"
+                android:text="LEGS WORKOUT"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/legs1Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginBottom="1140dp"
+                android:src="@drawable/legs_1_squats_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft" />
+
+            <ImageView
+                android:id="@+id/legs2Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginBottom="284dp"
+                android:src="@drawable/legs_2_backward_lunges_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/legs1Picture"
+                app:layout_constraintVertical_bias="0.128" />
+
+
+            <ImageView
+                android:id="@+id/legs3Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="92dp"
+                android:src="@drawable/legs_3_donkey_kicks_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/legs2Picture" />
+
+            <ImageView
+                android:id="@+id/legs4Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginBottom="268dp"
+                android:src="@drawable/legs_4_wall_calf_raises_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft" />
+
+
+            <ImageView
+                android:id="@+id/legs5Picture"
+                android:layout_width="189dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="1220dp"
+                android:src="@drawable/legs_5_side_lying_leg_lift_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonLegs1Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="320dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonLegs2Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="612dp"
+
+                android:layout_marginEnd="4dp"
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonLegs3Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="896dp"
+
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/legs3Picture"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonLegs4Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="1192dp"
+
+                android:layout_marginEnd="4dp"
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonLegs5Workout"
+                style="@style/blueButtonStyle"
+                android:layout_width="134dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="1460dp"
+
+                android:layout_marginEnd="4dp"
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="@color/white" />
+
+            <TextView
+                android:id="@+id/chestWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="36dp"
+                android:drawablePadding="6dp"
+                android:text="Squats"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.671"
+                app:layout_constraintStart_toEndOf="@+id/legs1Picture"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/handsWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="212dp"
+                android:layout_marginEnd="24dp"
+                android:drawablePadding="6dp"
+                android:text="backward\n Lunges"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chestWorkoutText" />
+
+            <TextView
+                android:id="@+id/backWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="244dp"
+                android:drawablePadding="6dp"
+                android:text="Donkey kicks"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/legs3Picture"
+                app:layout_constraintTop_toBottomOf="@+id/handsWorkoutText" />
+
+            <TextView
+                android:id="@+id/legsWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="540dp"
+                android:layout_marginEnd="40dp"
+                android:drawablePadding="6dp"
+                android:text="Wall Calf\n Raises"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/handsWorkoutText" />
+
+            <TextView
+                android:id="@+id/absWorkoutText"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="808dp"
+                android:layout_marginEnd="24dp"
+                android:drawablePadding="6dp"
+                android:text="Side Lying\nLeg Lift"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/handsWorkoutText" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineRegisterLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.09" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineRegisterRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="369dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
