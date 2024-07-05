@@ -18,9 +18,6 @@ class StartAgainExercise : AppCompatActivity() {
         setContentView(binding.root)
         val bundle = intent.extras
         val nos = bundle!!.getInt("nos")
-        val tps = bundle!!.getInt("tps")
-        val imgSrc = bundle!!.getInt("imgSrc")
-        val exeName = bundle!!.getString("exeName")
         binding.setsRem.text = "Number Of sets Remaining : $nos"
         if(nos != 0){
             binding.startABTN.setOnClickListener {

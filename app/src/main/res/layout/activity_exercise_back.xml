@@ -203,7 +203,7 @@
                 android:layout_marginTop="212dp"
                 android:layout_marginEnd="40dp"
                 android:drawablePadding="6dp"
-                android:text="Car-Cow\nPose"
+                android:text="Cat-Cow\nPose"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/chestWorkoutText" />

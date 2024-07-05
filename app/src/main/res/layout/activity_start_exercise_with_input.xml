@@ -33,7 +33,7 @@
             app:layout_constraintEnd_toStartOf="@+id/startNOS"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/startABTN" />
+            app:layout_constraintTop_toBottomOf="@+id/startBTN" />
 
         <EditText
             android:id="@+id/startNOS"
@@ -44,7 +44,7 @@
             android:ems="6"
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/startABTN" />
+            app:layout_constraintTop_toBottomOf="@+id/startBTN" />
 
         <TextView
             android:id="@+id/textView2"
