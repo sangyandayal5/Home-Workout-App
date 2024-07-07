@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.LayoutInflater
 import android.widget.Toast
 import com.example.homeworkout.R
+import com.example.homeworkout.databinding.ActivityCutomToastBinding
 import com.example.homeworkout.databinding.ActivityLoginRegisterBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -58,24 +60,39 @@ class LoginRegisterActivity : AppCompatActivity() {
                                 startActivity(intent)
                             }
                             else{
-                                Toast.makeText(this,it.exception.toString(),Toast.LENGTH_LONG).show()
+                                showCustomToast("Registration Failed. Please try again")
                             }
                         }
                     }
                     else{
-                        Toast.makeText(this,"Length of Password Should me greater than 5",Toast.LENGTH_LONG).show()
+                        showCustomToast("Length of Password should be atleast 6")
                     }
                 }
                 else{
-                    Toast.makeText(this,"Invalid Email",Toast.LENGTH_LONG).show()
+                    showCustomToast("Entered Email is invalid")
                 }
 
             }
             else{
-                Toast.makeText(this,"Empty Fields are not allowed",Toast.LENGTH_LONG).show()
+                showCustomToast("Empty fields are not allowed")
             }
         }
     }
+
+    private fun showCustomToast(message: String) {
+
+        val layoutInflater = LayoutInflater.from(this)
+        val customToastBinding = ActivityCutomToastBinding.inflate(layoutInflater)
+
+        customToastBinding.tvMessage.text = message
+
+        with(Toast(this)) {
+            duration = Toast.LENGTH_SHORT
+            view = customToastBinding.root
+            show()
+        }
+    }
+
 }
 
 fun CharSequence?.isValidEmail() = !isNullOrEmpty() && Patterns.EMAIL_ADDRESS.matcher(this).matches()

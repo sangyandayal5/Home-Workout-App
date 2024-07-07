@@ -49,35 +49,32 @@ class SignInActivity : AppCompatActivity() {
                                 finish()
                             }
                             else{
-                                Toast.makeText(this,it.exception.toString(), Toast.LENGTH_LONG).show()
+                                showCustomToast("Login Failed. Please try again")
                             }
                         }
                     }
                     else{
-                        showCustomToast("The password is too short")
-//                        Toast.makeText(this,"Length of Password Should me greater than 5", Toast.LENGTH_LONG).show()
+                        showCustomToast("Length of Password should be atleast 6")
                     }
                 }
                 else{
-                    Toast.makeText(this,"Invalid Email", Toast.LENGTH_LONG).show()
+                    showCustomToast("Entered Email is invalid")
                 }
 
             }
             else{
-                Toast.makeText(this,"Empty Fields are not allowed", Toast.LENGTH_LONG).show()
+                showCustomToast("Empty fields are not allowed")
             }
         }
     }
 
     private fun showCustomToast(message: String) {
-        // Inflate custom toast layout
+
         val layoutInflater = LayoutInflater.from(this)
         val customToastBinding = ActivityCutomToastBinding.inflate(layoutInflater)
 
-        // Set the message for the custom toast
         customToastBinding.tvMessage.text = message
 
-        // Create the toast
         with(Toast(this)) {
             duration = Toast.LENGTH_SHORT
             view = customToastBinding.root
