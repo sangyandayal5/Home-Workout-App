@@ -46,7 +46,10 @@ class WorkoutActivity : AppCompatActivity() {
             }
 
         binding.buttonQuickWorkout.setOnClickListener{
-            val intent  = Intent(this, QuickWorkoutActivity::class.java)
+            val intent  = Intent(this, WarmupExerciseStart::class.java)
+            val bundle = Bundle()
+            bundle.putInt("cPos",0)
+            intent.putExtras(bundle)
             startActivity(intent)
         }
 
