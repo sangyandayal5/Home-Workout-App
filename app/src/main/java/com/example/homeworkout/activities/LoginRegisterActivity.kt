@@ -65,16 +65,40 @@ class LoginRegisterActivity : AppCompatActivity() {
                         }
                     }
                     else{
-                        showCustomToast("Length of Password should be atleast 6")
+                        binding.rgPassword.error = "Length of Password should be atleast 6"
+                        binding.rgPassword.requestFocus()
+                        return@setOnClickListener
+//                        showCustomToast("Length of Password should be atleast 6")
                     }
                 }
                 else{
-                    showCustomToast("Entered Email is invalid")
+                    binding.rgEmail.error = "Entered Email is invalid"
+                    binding.rgEmail.requestFocus()
+                    return@setOnClickListener
+//                    showCustomToast("Entered Email is invalid")
                 }
 
             }
             else{
-                showCustomToast("Empty fields are not allowed")
+                if(email.isEmpty() && password.isEmpty()){
+                    binding.rgPassword.error = "Empty fields are not allowed"
+                    binding.rgEmail.error = "Empty fields are not allowed"
+                    binding.rgPassword.requestFocus()
+                    binding.rgEmail.requestFocus()
+                    return@setOnClickListener
+                }
+                else if(email.isNotEmpty()){
+                    binding.rgPassword.error = "Empty fields are not allowed"
+                    binding.rgPassword.requestFocus()
+                    return@setOnClickListener
+                }
+                else{
+                    binding.rgEmail.error = "Empty fields are not allowed"
+                    binding.rgEmail.requestFocus()
+                    return@setOnClickListener
+                }
+
+//                showCustomToast("Empty fields are not allowed")
             }
         }
     }

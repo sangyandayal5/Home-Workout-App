@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".activities.MyHistoryActivity">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="match_parent"
@@ -23,17 +22,17 @@
 
             <TextView
                 android:id="@+id/tvAppName"
+                style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/h3"
                 android:layout_marginTop="50dp"
 
                 android:drawablePadding="6dp"
+                android:text="My History Page"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="My History Page"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineRegisterLeft"
@@ -49,6 +48,18 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.91" />
 
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginEnd="364dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.029" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.homeworkout.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.homeworkout.databinding.ActivityMyHistoryBinding
@@ -14,6 +15,17 @@ class MyHistoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding  = ActivityMyHistoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding.backButton.setOnClickListener{
+            var UID = firebaseAuth.uid.toString()
+            val intent = Intent(this,WorkoutActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("UID",UID)
+            intent.putExtras(bundle)
+            startActivity(intent)
+            finish()
+        }
 
     }
 

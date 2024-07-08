@@ -49,21 +49,45 @@ class SignInActivity : AppCompatActivity() {
                                 finish()
                             }
                             else{
+
                                 showCustomToast("Login Failed. Please try again")
                             }
                         }
                     }
                     else{
-                        showCustomToast("Length of Password should be atleast 6")
+                        binding.edPasswordLogin.error = "Length of Password should be atleast 6"
+                        binding.edPasswordLogin.requestFocus()
+                        return@setOnClickListener
+                        //showCustomToast("Length of Password should be atleast 6")
                     }
                 }
                 else{
-                    showCustomToast("Entered Email is invalid")
+                    binding.edEmailLogin.error = "Entered Email is invalid"
+                    binding.edEmailLogin.requestFocus()
+                    return@setOnClickListener
+//                    showCustomToast("Entered Email is invalid")
                 }
 
             }
             else{
-                showCustomToast("Empty fields are not allowed")
+                if(email.isEmpty() && password.isEmpty()){
+                    binding.edPasswordLogin.error = "Empty fields are not allowed"
+                    binding.edEmailLogin.error = "Empty fields are not allowed"
+                    binding.edPasswordLogin.requestFocus()
+                    binding.edEmailLogin.requestFocus()
+                    return@setOnClickListener
+                }
+                else if(email.isNotEmpty()){
+                    binding.edPasswordLogin.error = "Empty fields are not allowed"
+                    binding.edPasswordLogin.requestFocus()
+                    return@setOnClickListener
+                }
+                else{
+                    binding.edEmailLogin.error = "Empty fields are not allowed"
+                    binding.edEmailLogin.requestFocus()
+                    return@setOnClickListener
+                }
+//                showCustomToast("Empty fields are not allowed")
             }
         }
     }

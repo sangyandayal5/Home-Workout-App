@@ -1,5 +1,6 @@
 package com.example.homeworkout.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,26 @@ class MyProfileActivity : AppCompatActivity() {
             } else {
                 Log.d("Profile", "No data")
             }
+        }
+
+        binding.backButton.setOnClickListener{
+            var UID = firebaseAuth.uid.toString()
+            val intent = Intent(this,WorkoutActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("UID",UID)
+            intent.putExtras(bundle)
+            startActivity(intent)
+            finish()
+        }
+
+        binding.buttonChangePassword.setOnClickListener{
+            val intent  = Intent(this, ForgetPasswordActivityProfile::class.java)
+            startActivity(intent)
+        }
+
+        binding.logoutPassword.setOnClickListener{
+            val intent  = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
         }
     }
     private fun upd(fName : String,lName : String,email : String){

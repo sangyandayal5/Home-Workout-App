@@ -42,11 +42,31 @@ class StartExerciseWithInput : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 } else {
-                    showCustomToast("The entries must be positive!!!")
+                    if(nos<0) {
+                        binding.startNOS.error = "Number of sets must be positive!!!"
+                        binding.startNOS.requestFocus()
+                        return@setOnClickListener
+                    }
+                    else{
+                        binding.startTPS.error = "Time must be positive!!!"
+                        binding.startTPS.requestFocus()
+                        return@setOnClickListener
+                    }
+//                    showCustomToast("The entries must be positive!!!")
                 }
             }
             else{
-                showCustomToast("Fields must not be empty!!")
+                if(numberOfSets.isEmpty()){
+                    binding.startNOS.error = "Fields must not be empty!!"
+                    binding.startNOS.requestFocus()
+                    return@setOnClickListener
+                }
+                else{
+                    binding.startTPS.error = "Fields must not be empty!!"
+                    binding.startTPS.requestFocus()
+                    return@setOnClickListener
+                }
+//                showCustomToast("Fields must not be empty!!")
             }
         }
     }
