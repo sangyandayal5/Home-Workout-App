@@ -17,6 +17,12 @@ class ExerciseChestActivity : AppCompatActivity() {
         binding = ActivityExerciseChestBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var bundle = Bundle()
+
+        binding.backButton.setOnClickListener{
+            val intent  = Intent(this, ExercisesWorkoutActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.buttonChest1Workout.setOnClickListener {
             val intent = Intent(this@ExerciseChestActivity,StartExerciseWithInput::class.java)
             bundle.putString("exeName","Push-ups")

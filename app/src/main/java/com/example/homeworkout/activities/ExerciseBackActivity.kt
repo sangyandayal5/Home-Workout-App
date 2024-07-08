@@ -17,6 +17,12 @@ class ExerciseBackActivity : AppCompatActivity() {
         binding = ActivityExerciseBackBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var bundle = Bundle()
+
+        binding.backButton.setOnClickListener{
+            val intent  = Intent(this, ExercisesWorkoutActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.buttonLegs1Workout.setOnClickListener {
             val intent = Intent(this@ExerciseBackActivity,StartExerciseWithInput::class.java)
             bundle.putString("exeName","Triceps Kickbacks")

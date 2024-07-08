@@ -17,6 +17,12 @@ class ExerciseLegsActivity : AppCompatActivity() {
         binding = ActivityExerciseLegsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var bundle = Bundle()
+
+        binding.backButton.setOnClickListener{
+            val intent  = Intent(this, ExercisesWorkoutActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.buttonLegs1Workout.setOnClickListener {
             val intent = Intent(this@ExerciseLegsActivity,StartExerciseWithInput::class.java)
             bundle.putString("exeName","Squats")

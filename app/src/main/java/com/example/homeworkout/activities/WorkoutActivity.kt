@@ -33,8 +33,8 @@ class WorkoutActivity : AppCompatActivity() {
         docRef.get().addOnSuccessListener { document ->
             if (document != null && document.exists()) {
                 val fname = document.data?.get("fname").toString()
-                val lname = document.data?.get("lname").toString()
-                val userName = "$fname $lname"
+//                val lname = document.data?.get("lname").toString()
+                val userName = "$fname"
                 currentContext.cname(userName)  // Use the local context reference
                 Log.d("WorkoutActivity", "data : ${document.data}")
             } else {

@@ -16,6 +16,18 @@ class ExercisesWorkoutActivity : AppCompatActivity(){
         binding  = ActivityExercisesWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding.backButton.setOnClickListener{
+            var UID = firebaseAuth.uid.toString()
+            val intent = Intent(this,WorkoutActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("UID",UID)
+            intent.putExtras(bundle)
+            startActivity(intent)
+            finish()
+        }
+
         binding.buttonChestWorkout.setOnClickListener{
             val intent  = Intent(this, ExerciseChestActivity::class.java)
             startActivity(intent)
