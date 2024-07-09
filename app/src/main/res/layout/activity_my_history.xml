@@ -31,7 +31,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/blury_background"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="-13dp" />
+                tools:layout_editor_absoluteX="0dp" />
 
             <ImageView
                 android:id="@+id/plusButton"
@@ -129,7 +129,7 @@
                 android:text="Sr.No"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.063"
+                app:layout_constraintHorizontal_bias="0.045"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -144,7 +144,7 @@
                 android:text="Exercise"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.342"
+                app:layout_constraintHorizontal_bias="0.311"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -159,7 +159,7 @@
                 android:text="Date"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.655"
+                app:layout_constraintHorizontal_bias="0.675"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -174,119 +174,115 @@
                 android:text="Sets "
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintHorizontal_bias="0.954"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/line1"
                 style="@style/h3"
-                android:layout_width="wrap_content"
+                android:layout_width="21dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="180dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.846"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/exe1"
+                app:layout_constraintEnd_toStartOf="@+id/exe1"
+                app:layout_constraintHorizontal_bias="0.59"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@+id/exe1" />
 
             <TextView
                 android:id="@+id/line2"
                 style="@style/h3"
-                android:layout_width="wrap_content"
+                android:layout_width="21dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="230dp"
-                android:visibility="gone"
 
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.653"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line1" />
 
             <TextView
                 android:id="@+id/line3"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="280dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
 
             <TextView
                 android:id="@+id/line4"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="330dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line3" />
 
             <TextView
                 android:id="@+id/line5"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="380dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line4" />
 
             <TextView
                 android:id="@+id/line6"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="430dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line5" />
 
             <TextView
                 android:id="@+id/line7"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="480dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line6" />
 
 
             <TextView
@@ -294,45 +290,44 @@
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="530dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line7" />
 
             <TextView
                 android:id="@+id/line9"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="580dp"
-                android:visibility="gone"
-
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+
+                android:text="xx"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line8" />
 
             <TextView
                 android:id="@+id/line10"
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="630dp"
 
                 android:drawablePadding="6dp"
-                android:text="xxxxxx       xxxxxxxx       xxxx      xxxxxxx"
+                android:text="xx"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.090"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/line9" />
 
             <ImageView
                 android:id="@+id/backButton"
@@ -367,6 +362,49 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_begin="22dp" />
+
+            <TextView
+                android:id="@+id/exe1"
+                style="@style/h3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="xxxxxxxxxxx"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="@+id/guidelineRegisterLeft"
+                app:layout_constraintTop_toBottomOf="@+id/ExName" />
+
+            <TextView
+                android:id="@+id/date1"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:drawablePadding="6dp"
+                android:text="2222/22/22"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/exe1"
+                app:layout_constraintStart_toEndOf="@+id/exe1"
+                app:layout_constraintTop_toTopOf="@+id/exe1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/set1"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:text="10"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/exe1"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRegisterRight"
+                app:layout_constraintHorizontal_bias="0.403"
+                app:layout_constraintStart_toEndOf="@+id/date1"
+                app:layout_constraintTop_toTopOf="@+id/exe1"
+                app:layout_constraintVertical_bias="1.0" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
