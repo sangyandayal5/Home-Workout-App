@@ -27,6 +27,18 @@ class MyHistoryActivity : AppCompatActivity() {
             finish()
         }
 
+        var total = 0; // Change value after taking data from db
+
+        var currentPage = (total+9)/10;
+
+        binding.minusButton.setOnClickListener{
+
+        }
+
+        binding.plusButton.setOnClickListener{
+
+        }
+
     }
 
 }
