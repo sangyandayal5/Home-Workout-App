@@ -23,7 +23,7 @@ class WarmupExerciseStart : AppCompatActivity() {
             val intent = Intent(this@WarmupExerciseStart,FinishExerciseScreen::class.java)
             val bundle1 = Bundle()
             bundle1.putString("exeName","WarmUp")
-            bundle1.putInt("nos",1)
+            bundle1.putInt("onos",1)
             intent.putExtras(bundle1)
             startActivity(intent)
             finish()

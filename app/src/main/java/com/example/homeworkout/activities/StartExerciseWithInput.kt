@@ -36,6 +36,7 @@ class StartExerciseWithInput : AppCompatActivity() {
                     bundle1.putInt("imgSrc", imgSrc)
                     bundle1.putInt("imgSrc1", imgSrc1)
                     bundle1.putInt("nos", nos)
+                    bundle1.putInt("onos", nos)
                     bundle1.putInt("tps", tps)
                     bundle1.putString("exeName", exeName)
                     intent.putExtras(bundle1)

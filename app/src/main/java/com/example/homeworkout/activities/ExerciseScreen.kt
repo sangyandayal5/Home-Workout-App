@@ -17,6 +17,7 @@ class ExerciseScreen : AppCompatActivity() {
         setContentView(binding.root)
         val bundle = intent.extras
         var nos = bundle!!.getInt("nos")
+        val onos = bundle!!.getInt("onos")
         val tps = bundle!!.getInt("tps")
         val imgSrc = bundle!!.getInt("imgSrc")
         val imgSrc1 = bundle!!.getInt("imgSrc1")
@@ -43,6 +44,7 @@ class ExerciseScreen : AppCompatActivity() {
                 bundle1.putInt("imgSrc",imgSrc)
                 bundle1.putInt("imgSrc1",imgSrc1)
                 bundle1.putInt("nos",nos)
+                bundle1.putInt("onos",onos)
                 bundle1.putInt("tps",tps)
                 bundle1.putString("exeName",exeName)
                 intent.putExtras(bundle1)

@@ -5,6 +5,7 @@ import android.icu.text.SimpleDateFormat
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.annotation.RequiresApi
 import com.example.homeworkout.R
 import com.example.homeworkout.databinding.ActivityFinishExerciseScreenBinding
@@ -27,20 +28,45 @@ class FinishExerciseScreen : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         val db = Firebase.firestore
         val bundle = intent.extras
-        val uid = firebaseAuth.uid
-        val exeName = bundle!!.getString("exeName")
-        val nos = bundle!!.getInt("nos")
-        val cDate = LocalDate.now()
-        val exercise = hashMapOf(
-            "name" to exeName,
-            "nos" to nos,
-            "date" to cDate
-        )
-//        val exeRef = uid?.let { db.collection("history").document(it) }
+        val uid = firebaseAuth.uid.toString()
+        val exeName = bundle!!.getString("exeName").toString()
+        val nos = bundle!!.getInt("onos")
+        val cDate = LocalDate.now().toString()
+        var name = ArrayList<String>()
+        var date = ArrayList<String>()
+        var num  = ArrayList<Int>()
+        name.add(exeName)
+        date.add(cDate)
+        num.add(nos)
+        val exeRef = uid.let { db.collection("history").document(it) }
 //        exeRef?.set(exercise)
+        exeRef.get().addOnSuccessListener{ document ->
+            if (document != null && document.exists()){
+                val pdate = document.data?.get("date")
+                val pname = document.data?.get("name")
+                val pnum = document.data?.get("num")
+                name.addAll(pname as Collection<String>)
+                date.addAll(pdate as Collection<String>)
+                num.addAll(pnum as Collection<Int>)
+                val his = hashMapOf(
+                    "name" to name,
+                    "date" to date,
+                    "num" to num
+                )
+                exeRef.set(his)
+                Log.d("Finish", "data : ${document.data}")
+            }
+            else{
+                val his = hashMapOf(
+                    "name" to name,
+                    "date" to date,
+                    "num" to num
+                )
+                exeRef.set(his)
+                Log.d("Finish", "No data")
+            }
+        }
         binding.endBTN.setOnClickListener {
-//            val intent = Intent(this,ExercisesWorkoutActivity::class.java)
-//            startActivity(intent)
             finish()
         }
     }
