@@ -129,7 +129,9 @@
                 android:layout_marginTop="13dp"
                 app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
                 app:layout_constraintTop_toBottomOf="@id/btnRegister"
-                android:src="@drawable/facebook_login"/>
+                android:src="@drawable/facebook_login"
+                android:visibility="gone"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -138,7 +140,9 @@
                 app:layout_constraintStart_toStartOf="@id/facebookRegister"
                 app:layout_constraintTop_toTopOf="@id/facebookRegister"
                 app:layout_constraintBottom_toBottomOf="@id/facebookRegister"
-                app:layout_constraintEnd_toEndOf="@id/facebookRegister"/>
+                app:layout_constraintEnd_toEndOf="@id/facebookRegister"
+                android:visibility="gone"
+                />
 
             <ImageView
                 android:id="@+id/googleRegister"
@@ -147,7 +151,9 @@
                 android:layout_marginTop="13dp"
                 app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
                 app:layout_constraintTop_toBottomOf="@id/btnRegister"
-                android:src="@drawable/google_login"/>
+                android:src="@drawable/google_login"
+                android:visibility="gone"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,7 +162,9 @@
                 app:layout_constraintStart_toStartOf="@id/googleRegister"
                 app:layout_constraintTop_toTopOf="@id/googleRegister"
                 app:layout_constraintBottom_toBottomOf="@id/googleRegister"
-                app:layout_constraintEnd_toEndOf="@id/googleRegister"/>
+                app:layout_constraintEnd_toEndOf="@id/googleRegister"
+                android:visibility="gone"
+                />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineRegisterLeft"
