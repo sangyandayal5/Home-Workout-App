@@ -38,8 +38,8 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
 
-                android:layout_marginTop="592dp"
-                android:layout_marginEnd="112dp"
+                android:layout_marginTop="736dp"
+                android:layout_marginEnd="124dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/plus_button"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -50,8 +50,8 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
 
-                android:layout_marginTop="592dp"
-                android:layout_marginEnd="288dp"
+                android:layout_marginTop="736dp"
+                android:layout_marginEnd="280dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/minus_button"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,13 +62,13 @@
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="596dp"
+                android:layout_marginTop="740dp"
 
                 android:drawablePadding="6dp"
                 android:text="/"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintHorizontal_bias="0.455"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,13 +77,13 @@
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="596dp"
+                android:layout_marginTop="740dp"
 
                 android:drawablePadding="6dp"
                 android:text="a"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.371"
+                app:layout_constraintHorizontal_bias="0.376"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,13 +92,13 @@
                 style="@style/h3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="596dp"
+                android:layout_marginTop="740dp"
 
                 android:drawablePadding="6dp"
                 android:text="b"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
