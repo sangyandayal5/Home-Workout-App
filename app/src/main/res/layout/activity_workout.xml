@@ -104,17 +104,16 @@
             <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                 android:id="@+id/buttonProfile"
                 style="@style/blueButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/mediumButtonHeight"
+                android:layout_width="130dp"
+                android:layout_height="55dp"
 
-                android:layout_marginTop="56dp"
                 android:text="My Profile"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/line4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.677"
+                app:layout_constraintStart_toEndOf="@+id/buttonHistory"
                 app:layout_constraintTop_toBottomOf="@+id/buttonCreateWorkout"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_bias="0.265"
                 app:spinning_bar_color="@color/white" />
 
             <androidx.constraintlayout.widget.Guideline
