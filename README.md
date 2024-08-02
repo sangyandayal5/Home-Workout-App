@@ -8,7 +8,7 @@ Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
 ### 1. Feature 1 : Register and Login
 
-<img src="https://github.com/user-attachments/assets/af54c93d-8944-4977-b647-fddd05bc3067" alt="Login Page" width="500" height="300">
+<img src="https://github.com/user-attachments/assets/af54c93d-8944-4977-b647-fddd05bc3067" alt="Login Page" width="500" height="180">
 
 
 
