@@ -35,6 +35,12 @@ Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
 ### 5. Starting the exercise
 
+<img src="https://github.com/user-attachments/assets/28bdea6b-0dae-4e47-b1bd-6f579dc441a2" alt="sets_and_time_selection" width="240" height="500">
+
+<img src="https://github.com/user-attachments/assets/273ec0aa-4461-4c21-bc5a-40b88048c395" alt="sets_and_time_selection" width="240" height="500">
+
+
+
 
 ### 6. My History Page
 
