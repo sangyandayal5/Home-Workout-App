@@ -7,8 +7,9 @@ Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 ## Features of the app : 
 
 ### 1. Feature 1 : Register and Login
+![Login Page](https://github.com/user-attachments/assets/4b77e0ea-336d-4c75-8d47-e0a7d0ed4188)
 
-<img src="https://github.com/user-attachments/assets/af54c93d-8944-4977-b647-fddd05bc3067" alt="Login Page" width="180" height="500">
+<img src="https://github.com/user-attachments/assets/4b77e0ea-336d-4c75-8d47-e0a7d0ed4188" alt="Login Page" width="240" height="500">
 
 
 
