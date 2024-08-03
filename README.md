@@ -28,9 +28,9 @@ Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
 <img src="https://github.com/user-attachments/assets/819daee9-f8bb-4c5d-bf3d-9e97a99c9994" alt="Exercises_Window" width="240" height="500">
 
-<img src="https://github.com/user-attachments/assets/5c9a56cf-e075-42be-a497-570e43b95e3f" alt="Arms_Workout" width="240" height="500">
+<img src="https://github.com/user-attachments/assets/69d67169-7ba1-4543-b396-8d1a641304bb" alt="Arms_Workout" width="240" height="500">
 
-<img src="(https://github.com/user-attachments/assets/64cc47be-947d-456e-a32c-8856745b3f2b" alt="Legs_Workout" width="240" height="500">
+<img src="https://github.com/user-attachments/assets/fb6abb0b-1660-44b0-be85-176cc0c51929" alt="Legs_Workout" width="240" height="500">
 
 
 ### 5. Starting the exercise
