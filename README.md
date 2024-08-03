@@ -42,6 +42,7 @@ They can even select the number of sets and the duration of each set of the exer
 
 ### 5. Starting the exercise
 User can enter the sets and time to start the exercise.
+
 <img src="https://github.com/user-attachments/assets/28bdea6b-0dae-4e47-b1bd-6f579dc441a2" alt="sets_and_time_selection" width="240" height="500">
 
 <img src="https://github.com/user-attachments/assets/273ec0aa-4461-4c21-bc5a-40b88048c395" alt="sets_and_time_selection" width="240" height="500">
@@ -49,10 +50,12 @@ User can enter the sets and time to start the exercise.
 
 ### 6. My History Page
 User can view the name of exercises performed along with the date and number of sets.
+
 <img src="https://github.com/user-attachments/assets/e6fcacae-5f1c-4871-8808-ee1287381011" alt="Login Page" width="240" height="500">
 
 ### 7. My Profile Page
 User can view their personal details and can change their password from profile page.They can also logout from this page.
+
 <img src="https://github.com/user-attachments/assets/65d77092-422b-44b0-8ee5-bbc785d8aa47" alt="Login Page" width="240" height="500">
 
 
