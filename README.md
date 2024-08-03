@@ -1,7 +1,7 @@
 # HOME WORKOUT APP 
 Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
-## Features of the app : 
+##App Walkthrough
 
 ### 1. Register and Login
 
@@ -30,6 +30,8 @@ Quick workout provides user 5 exercises, one of each type with a predefined sets
 <img src="https://github.com/user-attachments/assets/3b0bf414-a602-45e3-95e1-2acce6b6f7d7" alt="Quick_Workout" width="240" height="500">
 
 ### 4. Exercies and Workouts Page
+In this page, user can select the type of exercise they want to do and the particular exercise as well.
+They can even select the number of sets and the duration of each set of the exercise.
 
 <img src="https://github.com/user-attachments/assets/819daee9-f8bb-4c5d-bf3d-9e97a99c9994" alt="Exercises_Window" width="240" height="500">
 
@@ -39,18 +41,18 @@ Quick workout provides user 5 exercises, one of each type with a predefined sets
 
 
 ### 5. Starting the exercise
-
+User can enter the sets and time to start the exercise.
 <img src="https://github.com/user-attachments/assets/28bdea6b-0dae-4e47-b1bd-6f579dc441a2" alt="sets_and_time_selection" width="240" height="500">
 
 <img src="https://github.com/user-attachments/assets/273ec0aa-4461-4c21-bc5a-40b88048c395" alt="sets_and_time_selection" width="240" height="500">
 
 
 ### 6. My History Page
-
+User can view the name of exercises performed along with the date and number of sets.
 <img src="https://github.com/user-attachments/assets/e6fcacae-5f1c-4871-8808-ee1287381011" alt="Login Page" width="240" height="500">
 
 ### 7. My Profile Page
-
+User can view their personal details and can change their password from profile page.They can also logout from this page.
 <img src="https://github.com/user-attachments/assets/65d77092-422b-44b0-8ee5-bbc785d8aa47" alt="Login Page" width="240" height="500">
 
 
