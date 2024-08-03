@@ -1,12 +1,11 @@
 # HOME WORKOUT APP 
 Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
-## How to run the app in your device ?
-
-
 ## Features of the app : 
 
 ### 1. Register and Login
+
+New users can register using the register page.If they already have an account, then can login to get on the landing page
 
 <img src="https://github.com/user-attachments/assets/35416add-7d5b-46b3-bd5d-48c504418a68" alt="Register_Login_Page" width="240" height="500" style="margin-right: 200px;">
 
@@ -17,11 +16,15 @@ Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
 
 ### 2. Landing Page
-
+Once user reaches this page, he gets four options.
+  1.Start a quick workout
+  2.Start your custom workout
+  3.View your history
+  4.View your profile
 <img src="https://github.com/user-attachments/assets/c941cc83-2203-45ee-835c-ecd1e6123dad" alt="Landing_Page" width="240" height="500">
 
 ### 3. Quick Workout Page
-
+  Quick workout provides user 5 exercises, one of each type with a predefined sets and time.
 <img src="https://github.com/user-attachments/assets/3b0bf414-a602-45e3-95e1-2acce6b6f7d7" alt="Quick_Workout" width="240" height="500">
 
 ### 4. Exercies and Workouts Page
@@ -38,8 +41,6 @@ Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 <img src="https://github.com/user-attachments/assets/28bdea6b-0dae-4e47-b1bd-6f579dc441a2" alt="sets_and_time_selection" width="240" height="500">
 
 <img src="https://github.com/user-attachments/assets/273ec0aa-4461-4c21-bc5a-40b88048c395" alt="sets_and_time_selection" width="240" height="500">
-
-
 
 
 ### 6. My History Page
