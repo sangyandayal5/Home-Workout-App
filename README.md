@@ -21,10 +21,12 @@ Once user reaches this page, he gets four options.
   2.Start your custom workout
   3.View your history
   4.View your profile
+  
 <img src="https://github.com/user-attachments/assets/c941cc83-2203-45ee-835c-ecd1e6123dad" alt="Landing_Page" width="240" height="500">
 
 ### 3. Quick Workout Page
 Quick workout provides user 5 exercises, one of each type with a predefined sets and time.
+
 <img src="https://github.com/user-attachments/assets/3b0bf414-a602-45e3-95e1-2acce6b6f7d7" alt="Quick_Workout" width="240" height="500">
 
 ### 4. Exercies and Workouts Page
