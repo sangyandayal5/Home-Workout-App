@@ -1,7 +1,7 @@
 # HOME WORKOUT APP 
 Group Porject by : Sangyan Dayal(sangyandayal5) and Rahul Nikhate(Rahul-Nikhate)
 
-##App Walkthrough
+## App Walkthrough
 
 ### 1. Register and Login
 
